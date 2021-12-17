@@ -2,10 +2,11 @@
 args = commandArgs(trailingOnly=TRUE)
 
 g4_outfile <- args[1]
-peak_file <- args[2] ## col1 chrom, col2 start, col3 end
+region_file <- args[2] ## col1 chrom, col2 start, col3 end
 separate_by <- args[3]
 first_position_ignore <- args[4]
-output_include_origin_peak <- args[5]
+out_file <- args[5]
+output_include_origin_peak <- args[6]
 
 # g4_outfile <- "/fh/fast/gottardo_r/yezheng_working/G-quadruplex/results/CSV/dm6_g4_grouped_window10_thres1.5.csv"
 # region_file <- "/fh/fast/gottardo_r/yezheng_working/G-quadruplex/data/AllgenesChrStartEndNameStrand.csv"
