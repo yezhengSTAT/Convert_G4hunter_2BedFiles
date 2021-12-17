@@ -1,0 +1,23 @@
+# Convert G4 hunter output from the website into BED files in the genomic coordinates
+
+This repository include the script and demodata to convert G4hunter output results into bed file in the genomic coordinate.
+
+There are a few parameters that require input file locations and tune input/output file format.
+
+```
+```
+
+
+```
+In terminal, or in a shell script.
+
+g4_outfile="....../demoData/demo_g4hunter_output.csv"
+region_file <- "....../demoData/AllgenesChrStartEndNameStrand.csv"
+separate_by <- ","
+first_position_ignore <- FALSE
+out_file <- "....../path/to/the/output/folder/demo_g4huter_motif.bed"
+output_include_origin_peak <- FALSE
+
+Rscript convert_G4hunter_out_to_bedfiles.R "${g4_outfile}" "${region_file}" "${separate_by}" "${first_position_ignore}" "${out_file}" "${output_include_origin_peak}"
+
+```
